@@ -2,6 +2,8 @@ provider "aws" {
    region = "us-east-2"
 
 }
+
+
 resource "aws_instance" "instance1" {
     ami = "ami-00e428798e77d38d9"
   
@@ -12,5 +14,4 @@ resource "aws_instance" "instance1" {
       Environment = "dev"
     }
 
-  
 }
